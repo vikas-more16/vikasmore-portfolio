@@ -1,0 +1,206 @@
+/* App.css */
+
+/* Light Theme (default) */
+:root {
+  --background: #ffffff;
+  --foreground: #252525;
+  --card: #ffffff;
+  --card-foreground: #252525;
+  --popover: #ffffff;
+  --popover-foreground: #252525;
+  --primary: #333333;
+  --primary-foreground: #fafafa;
+  --secondary: #f7f7f7;
+  --secondary-foreground: #333333;
+  --muted: #f7f7f7;
+  --muted-foreground: #8e8e8e;
+  --accent: #f7f7f7;
+  --accent-foreground: #333333;
+  --destructive: #b94a48;
+  --destructive-foreground: #b94a48;
+  --border: #ebebeb;
+  --input: #ebebeb;
+  --ring: #b5b5b5;
+  --radius: 10px;
+}
+
+/* Dark Theme */
+.dark {
+  --background: #252525;
+  --foreground: #fafafa;
+  --card: #252525;
+  --card-foreground: #fafafa;
+  --popover: #252525;
+  --popover-foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #333333;
+  --secondary: #444444;
+  --secondary-foreground: #fafafa;
+  --muted: #444444;
+  --muted-foreground: #b5b5b5;
+  --accent: #444444;
+  --accent-foreground: #fafafa;
+  --destructive: #a94442;
+  --destructive-foreground: #d9534f;
+  --border: #444444;
+  --input: #444444;
+  --ring: #6f6f6f;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+  outline-color: rgba(0, 212, 255, 0.5);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.bg-background {
+  background: var(--background);
+}
+.text-foreground {
+  color: var(--foreground);
+}
+.bg-card {
+  background: var(--card);
+}
+.text-muted-custom {
+  color: var(--muted-foreground);
+}
+.text-primary-custom {
+  color: var(--primary);
+}
+.text-glow {
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
+}
+
+/* Animations */
+.animate-slide-in-up {
+  animation: slideInUp 1s ease forwards;
+}
+.animate-fade-in-scale {
+  animation: fadeInScale 0.8s ease forwards;
+}
+.animate-float-enhanced {
+  animation: float 3s ease-in-out infinite;
+}
+.animate-pulse-glow-enhanced {
+  animation: pulseGlow 2s infinite;
+}
+.animate-bounce-slow {
+  animation: bounce 3s infinite;
+}
+.animate-twinkle {
+  animation: twinkle 1.5s infinite alternate;
+}
+.animate-twinkle-delayed {
+  animation: twinkle 1.5s infinite alternate 0.75s;
+}
+.animate-ping-enhanced {
+  animation: ping 2s infinite;
+}
+
+/* Keyframes */
+@keyframes slideInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 1);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes twinkle {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%,
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Decorative Dots */
+.decorative-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.decorative-dot-1 {
+  top: 20%;
+  left: 10%;
+}
+.decorative-dot-2 {
+  top: 40%;
+  left: 80%;
+}
+.decorative-dot-3 {
+  bottom: 25%;
+  left: 50%;
+}
+.decorative-dot-4 {
+  bottom: 10%;
+  right: 20%;
+}
+.decorative-dot-5 {
+  top: 70%;
+  right: 30%;
+}
