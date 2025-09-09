@@ -60,31 +60,40 @@ const App = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Attendiy",
       description:
-        "Full-stack e-commerce solution with real-time inventory and payment processing",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      image: "/modern-ecommerce-dashboard.png",
+        "A smart attendance management platform with QR-based marking, and real-time classroom analytics.",
+      tech: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Bootstrap",
+        "React",
+        "Firebase",
+        "Node.js",
+        "MongoDB",
+      ],
+      image: "/Attendify.png",
       github: "https://github.com/vikas-more16/ecommerce-platform",
-      live: "https://ecommerce-demo.vercel.app",
+      live: "https://www.attendify.in.net/",
     },
     {
-      title: "Task Management System",
+      title: "Vikas More | Portfolio",
       description:
-        "Enterprise Java application with microservices architecture and real-time collaboration",
-      tech: ["Java", "Spring Boot", "React", "MySQL"],
-      image: "/task-management-app.png",
+        "A personal portfolio showcasing my projects, certifications, and skills as a full-stack web developer.",
+      tech: ["HTML", "CSS", "Bootstrap", "Javascript", "React"],
+      image: "/Portfolio.png",
       github: "https://github.com/vikas-more16/task-management",
-      live: "https://task-manager-demo.vercel.app",
+      live: "https://vikasmore.vercel.app/",
     },
     {
-      title: "Real-time Chat Platform",
+      title: "SpotifyClone",
       description:
-        "Scalable WebSocket-based communication platform with end-to-end encryption",
-      tech: ["Next.js", "Socket.io", "MongoDB", "JWT"],
-      image: "/modern-chat-app.png",
+        "A responsive music streaming app replicating Spotify’s UI with playlists, playback, and basic web features.",
+      tech: ["HTML", "CSS", "Javascript"],
+      image: "/SpotifyClone.png",
       github: "https://github.com/vikas-more16/chat-platform",
-      live: "https://chat-demo.vercel.app",
+      live: "https://vikas-more16.github.io/Spotify-clone/",
     },
   ];
   const Certificates = [
@@ -386,13 +395,13 @@ const App = () => {
                       ))}
                     </div>
                     <div className="d-flex gap-2">
-                      <button
+                      {/* <button
                         className="btn btn-outline-primary btn-sm flex-fill"
                         onClick={() => window.open(project.github, "_blank")}
                       >
                         <Github className="me-2" />
                         Code
-                      </button>
+                      </button> */}
                       <button
                         className="btn btn-primary btn-sm flex-fill"
                         onClick={() => window.open(project.live, "_blank")}
