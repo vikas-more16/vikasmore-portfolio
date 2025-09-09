@@ -89,52 +89,61 @@ const App = () => {
   ];
   const Certificates = [
     {
-      title: "E-Commerce Platform",
+      title: "Complete Web Development Certification – Udemy",
       description:
-        "Full-stack e-commerce solution with real-time inventory and payment processing",
+        "Successfully completed an comprehensive Web Development course covering the full stack. Gained hands-on experience in building projects using HTML, CSS, Tailwind, JavaScript, React , Node.js, Express,  strengthening my ability to create modern, scalable  web applications.",
       image: "/Complete web development_page-0001.jpg",
     },
     {
-      title: "E-Commerce Platform",
+      title: "Node.js, Express.js & MongoDB Certification – KnowledgeGate",
       description:
-        "Full-stack e-commerce solution with real-time inventory and payment processing",
-      image: "/HTML_page-0001.jpg",
+        "Completed a practical course on Node.js, Express.js, and MongoDB, enhancing my expertise in backend and full-stack development. Learned to build robust server-side applications, design and implement RESTful APIs with Express.js, and efficiently manage data using MongoDB.",
+      image: "/NodeJS_page-0001.jpg",
     },
     {
-      title: "E-Commerce Platform",
+      title: "React & Redux Certification – KnowledgeGate",
       description:
-        "Full-stack e-commerce solution with real-time inventory and payment processing",
-      image: "/CSS_page-0001.jpg",
+        "Completed React & Redux certification under the guidance of Prashant Jain Sir via KnowledgeGate. Strengthened front-end development skills by building dynamic UIs, managing complex state with Redux, and integrating core web technologies (HTML, CSS, JavaScript).",
+      image: "/React_page-0001.jpg",
     },
     {
-      title: "E-Commerce Platform",
+      title: "JavaScript Certification – KnowledgeGate",
       description:
-        "Full-stack e-commerce solution with real-time inventory and payment processing",
+        "Earned the JavaScript Certification from KnowledgeGate. Developed strong skills in JavaScript fundamentals, DOM manipulation, and interactive web development, building my confidence and marking a significant milestone in my Full Stack journey.",
       image: "/Javascript_page-0001.jpg",
     },
     {
-      title: "E-Commerce Platform",
+      title: "CSS Certification – KnowledgeGate",
       description:
-        "Full-stack e-commerce solution with real-time inventory and payment processing",
+        "Completed the CSS Certification from KnowledgeGate, gaining strong knowledge of styling, layouts, and responsive design. This course enhanced my confidence in crafting visually appealing, user-friendly interfaces and marked another key milestone in my web development journey.",
+      image: "/CSS_page-0001.jpg",
+    },
+    {
+      title: "HTML Certification – KnowledgeGate",
+      description:
+        "Completed the HTML Certification from KnowledgeGate, gaining a strong foundation in HTML and web development. This course enhanced my confidence in building structured, semantic web pages and marked the beginning of my front-end and full-stack development journey.",
+      image: "/HTML_page-0001.jpg",
+    },
+    {
+      title:
+        "National Summer School on Web Development – SSGMCE ACM Student Chapter",
+      description:
+        "Successfully participated in the National Summer School on Web Development organized by SSGMCE ACM Student Chapter, Shegaon. The five-day program (17th–21st July 2024) comprised 40 hours of intensive training, workshops, and hands-on projects, strengthening my practical knowledge and confidence in web technologies.",
       image: "/ACM_SummerSchool.jpg",
     },
     {
-      title: "Task Management System",
+      title:
+        "Start-up Competition 2025 – Institution’s Innovation Council (IIC), SSGMCE",
       description:
-        "Enterprise Java application with microservices architecture and real-time collaboration",
+        "Actively participated in the Start-up Competition 2025 organized by Institution’s Innovation Council (IIC) and Institution of Engineers (India) Student’s Chapter at SSGMCE. The event, held on 22nd August 2025, recognized creativity, innovation, and entrepreneurial spirit, boosting my confidence and teamwork experience.",
       image: "/Eureka.jpg",
     },
     {
-      title: "Real-time Chat Platform",
+      title:
+        "Hackathon Participation – INNOVO SSGMCE’25, Shri Sant Gajanan Maharaj College of Engineering",
       description:
-        "Scalable WebSocket-based communication platform with end-to-end encryption",
+        "Participated in the Hackathon at INNOVO SSGMCE’25, held on 14th and 15th February 2025 at Shri Sant Gajanan Maharaj College of Engineering, Shegaon. This event enhanced my problem-solving, coding, and collaboration skills, providing practical exposure to building innovative solutions within limited timeframes.",
       image: "/INNOVO_Hackthon.jpg",
-    },
-    {
-      title: "Real-time Chat Platform",
-      description:
-        "Scalable WebSocket-based communication platform with end-to-end encryption",
-      image: "/SpaceOnWheels.jpg",
     },
   ];
 
@@ -349,7 +358,7 @@ const App = () => {
                       alt={project.title}
                       className="card-img-top w-100 h-100"
                       style={{
-                        objectFit: "cover",
+                        objectFit: "fill",
                         transition: "transform 0.5s ease",
                       }}
                       onMouseEnter={(e) =>
@@ -424,7 +433,7 @@ const App = () => {
                       alt={project.title}
                       className="card-img-top w-100 h-100"
                       style={{
-                        objectFit: "cover",
+                        objectFit: "fill",
                         transition: "transform 0.5s ease",
                       }}
                       onMouseEnter={(e) =>
