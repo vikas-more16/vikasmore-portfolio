@@ -4,9 +4,6 @@ import ReactDOM from "react-dom";
 import {
   Mail,
   Github,
-  Linkedin,
-  Phone,
-  MapPin,
   ExternalLink,
   Code,
   Server,
@@ -14,6 +11,8 @@ import {
   Database,
   Smartphone,
 } from "lucide-react";
+
+import ContactUs from "./Components/ContactUs";
 
 const App = () => {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -55,7 +54,7 @@ const App = () => {
     Smartphone: Smartphone,
     Server: Server,
     Terminal: Terminal,
-    Database: Database, // or Server if you want same icon
+    Database: Database,
   };
 
   const projects = [
@@ -256,7 +255,7 @@ const App = () => {
                 Vikas More
               </h1>
               <p className="display-4 text-primary-custom mb-4 font-bold">
-                Fullstack Web Developer | Java Developer
+                Fullstack Web Developer
               </p>
               <p className="fs-6 text-muted-custom mb-5 lh-lgc">
                 Enthusiastic about modern web technologies and eager to gain
@@ -503,178 +502,7 @@ const App = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-5 bg-card min-vh-100 overflow-hidden">
-        <div className="container">
-          <h2 className="font-serif font-black display-5 text-center mb-5 mt-4 text-foreground text-glow">
-            Get In Touch
-          </h2>
-
-          <div className="row g-5">
-            {/* Contact Info */}
-            <div className="col-md-6">
-              <div className="mb-4">
-                <h3 className="font-bold h2 text-foreground mb-4">
-                  Let's Connect
-                </h3>
-                <p className="fs-5 text-muted-custom mb-4 lh-lg">
-                  Ready to bring your next project to life? I'm always excited
-                  about new challenges and innovative solutions. Let's discuss
-                  how we can turn your vision into reality.
-                </p>
-              </div>
-
-              <div className="mb-4">
-                <div className="d-flex align-items-center mb-4">
-                  <div
-                    className="d-flex align-items-center justify-content-center rounded-circle me-3"
-                    style={{
-                      width: "48px",
-                      height: "48px",
-                      backgroundColor: "rgba(0, 212, 255, 0.2)",
-                    }}
-                  >
-                    <Mail className=" text-primary-custom  " />
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground mb-1">Email</p>
-                    <a
-                      href="mailto:vikas1662005@gmail.com"
-                      className="text-primary-custom text-decoration-none"
-                    >
-                      vikas1662005@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="d-flex align-items-center mb-4">
-                  <div
-                    className="d-flex align-items-center justify-content-center rounded-circle me-3"
-                    style={{
-                      width: "48px",
-                      height: "48px",
-                      backgroundColor: "rgba(0, 212, 255, 0.2)",
-                    }}
-                  >
-                    <Phone className="text-primary-custom" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground mb-1">Phone</p>
-                    <a
-                      href="tel:+919067718922"
-                      className="text-primary-custom text-decoration-none"
-                    >
-                      +91 9067718922
-                    </a>
-                  </div>
-                </div>
-
-                <div className="d-flex align-items-center mb-4">
-                  <div
-                    className="d-flex align-items-center justify-content-center rounded-circle me-3"
-                    style={{
-                      width: "48px",
-                      height: "48px",
-                      backgroundColor: "rgba(0, 212, 255, 0.2)",
-                    }}
-                  >
-                    <MapPin className="text-primary-custom" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground mb-1">Location</p>
-                    <p className="text-muted-custom mb-0">
-                      SSGMCE, Shegaon, Maharashtra
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="d-flex gap-3 pt-3">
-                <button
-                  className="btn btn-outline-primary btn-lg"
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/vikasmore16",
-                      "_blank"
-                    )
-                  }
-                >
-                  <Linkedin className="me-2" />
-                  LinkedIn
-                </button>
-                <button
-                  className="btn btn-outline-primary btn-lg"
-                  onClick={() =>
-                    window.open("https://github.com/vikas-more16", "_blank")
-                  }
-                >
-                  <Github className="me-2" />
-                  GitHub
-                </button>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div className="col-md-6">
-              <div className="card">
-                <div className="card-header">
-                  <h5 className="card-title text-foreground h3 mb-2">
-                    Send a Message
-                  </h5>
-                  <p className="text-muted-custom mb-0">
-                    I'll get back to you within 24 hours
-                  </p>
-                </div>
-                <div className="card-body">
-                  <form>
-                    <div className="row g-3 mb-3">
-                      <div className="col-md-6">
-                        <label className="form-label">Name</label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Your name"
-                        />
-                      </div>
-                      <div className="col-md-6">
-                        <label className="form-label">Email</label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          placeholder="your.email@example.com"
-                        />
-                      </div>
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label">Subject</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Project discussion"
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <label className="form-label">Message</label>
-                      <textarea
-                        rows="5"
-                        className="form-control"
-                        placeholder="Tell me about your project..."
-                      ></textarea>
-                    </div>
-                    <button
-                      type="submit"
-                      className="btn btn-primary btn-lg w-100 py-2"
-                    >
-                      <Mail className="me-2 mb-1" />
-                      Send Message
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <ContactUs />
       {/* Footer */}
       <footer
         className="py-4 border-top"
