@@ -63,13 +63,6 @@ body {
   height: 3.5rem;
 }
 
-.navbar-brand {
-  font-family: var(--font-montserrat);
-  font-weight: 900;
-  font-size: 1.5rem;
-  color: var(--primary) !important;
-}
-
 .navbar-nav .nav-link {
   color: var(--foreground) !important;
   font-weight: 900;
@@ -187,10 +180,6 @@ body {
   flex: 0 0 auto;
   width: 24.666667%;
   padding: 1rem;
-}
-
-.hero-container {
-  padding: 5rem;
 }
 
 /* Text Colors */

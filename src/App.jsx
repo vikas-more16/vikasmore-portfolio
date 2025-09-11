@@ -161,7 +161,7 @@ const App = () => {
       <nav className="navbar navbar-expand-md fixed-top">
         <div className="container">
           <button
-            className=" navbar-brand btn btn-link p-0 border-0 font-serif"
+            className="  btn btn-link p-0 border-0 font-serif navbar-brand"
             onClick={() => scrollToSection("hero")}
           >
             VM
@@ -310,16 +310,16 @@ const App = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-5 min-vh-100  ">
+      <section id="skills" className="py-5 min-vh-100 arsenal-section">
         <div className="container">
-          <h2 className="font-serif font-black display-5 text-center my-4 text-foreground text-glow">
+          <h2 className="font-serif font-black display-5 text-center my-4 text-foreground text-glow arsenal-title">
             Technical Arsenal
           </h2>
-          <div className="row g-4">
+          <div className="row g-4 arsenal-grid arsenal-grid">
             {skills.map((skill, index) => {
               const IconComponent = iconMap[skill.icon]; // get the actual component
               return (
-                <div key={skill.name} className="custom-col">
+                <div key={skill.name} className="custom-col arsenal-item">
                   <div
                     className="card h-200 text-center animate-fade-in-scale"
                     style={{ animationDelay: `${index * 100}ms` }}
@@ -328,7 +328,7 @@ const App = () => {
                       {IconComponent && (
                         <IconComponent className="mb-3 text-primary-custom" />
                       )}
-                      <h5 className="card-title font-bold text-foreground mb-2">
+                      <h5 className="card-title font-bold text-foreground mb-2 ">
                         {skill.name}
                       </h5>
                       <span className="badge">{skill.category}</span>
