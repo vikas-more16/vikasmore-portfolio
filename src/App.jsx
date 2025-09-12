@@ -59,7 +59,7 @@ const App = () => {
 
   const projects = [
     {
-      title: "Attendiy",
+      title: "AttendiFy",
       description:
         "A smart attendance management platform with QR-based marking, and real-time classroom analytics.",
       tech: [
