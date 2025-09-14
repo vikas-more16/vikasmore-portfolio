@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <div className="min-vh-100">
-      {/* Navbar */}
+      {/* Navbar Section */}
       <NavBar scrollToSection={scrollToSection} />
       {/* Hero Section */}
       <Hero scrollToSection={scrollToSection} isVisible={isVisible} />
