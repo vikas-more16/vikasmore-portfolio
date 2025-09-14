@@ -4,30 +4,28 @@ import { Mail as MailFeather } from "react-feather";
 import { Linkedin, Phone, MapPin, Mail, Github } from "lucide-react";
 
 function ContactUs() {
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  console.log(serviceId, templateId, publicKey);
+
   const form = useRef();
   const [success, setSuccess] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID", // replace with your EmailJS Service ID
-        "YOUR_TEMPLATE_ID", // replace with your EmailJS Template ID
-        form.current,
-        "YOUR_PUBLIC_KEY" // replace with your EmailJS Public Key
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccess("Message sent successfully!");
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccess("Failed to send message. Try again.");
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log(result.text);
+        setSuccess("Message sent successfully!");
+        form.current.reset();
+      },
+      (error) => {
+        console.log(error.text);
+        setSuccess("Failed to send message. Try again.");
+      }
+    );
   };
   return (
     <section id="contact" className="py-5 bg-card min-vh-100 overflow-hidden">
