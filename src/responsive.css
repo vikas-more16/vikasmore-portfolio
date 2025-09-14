@@ -141,6 +141,22 @@ footer {
   h2 {
     font-size: 1.3rem;
   }
+  .display-1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .display-4 {
+    font-size: 1.2rem;
+  }
+  .fs-6 {
+    font-size: 0.8rem !important;
+  }
+  .pt-s {
+    font-size: 1rem;
+  }
+  .col-lg-8 {
+    width: 100%;
+  }
   .navbar-brand {
     font-size: 1.2rem;
   }
@@ -162,13 +178,29 @@ footer {
 /* === Small / Medium Phones (iPhone 12/14 Pro, Pixel 7, Galaxy S20 Ultra) === */
 @media (min-width: 577px) and (max-width: 768px) {
   body {
-    font-size: 15px;
+    font-size: 10px;
   }
   h1 {
     font-size: 1.8rem;
   }
   h2 {
     font-size: 1.4rem;
+  }
+  .display-1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .display-4 {
+    font-size: 1.2rem;
+  }
+  .fs-6 {
+    font-size: 0.8rem !important;
+  }
+  .pt-s {
+    font-size: 1.2rem;
+  }
+  .col-lg-8 {
+    width: 100%;
   }
   .portfolio-grid {
     grid-template-columns: 1fr 1fr;
@@ -185,6 +217,22 @@ footer {
   }
   h2 {
     font-size: 1.6rem;
+  }
+  .display-1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .display-4 {
+    font-size: 1.2rem;
+  }
+  .fs-6 {
+    font-size: 0.8rem !important;
+  }
+  .pt-s {
+    font-size: 1.3rem;
+  }
+  .col-lg-8 {
+    width: 100%;
   }
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -207,6 +255,22 @@ footer {
   h2 {
     font-size: 1.8rem;
   }
+  .display-1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .display-4 {
+    font-size: 1.2rem;
+  }
+  .fs-6 {
+    font-size: 0.8rem !important;
+  }
+  .pt-s {
+    font-size: 1.4rem;
+  }
+  .col-lg-8 {
+    width: 100%;
+  }
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -222,6 +286,12 @@ footer {
   }
   h2 {
     font-size: 2rem;
+  }
+  .pt-s {
+    font-size: 1.5rem;
+  }
+  .col-lg-8 {
+    width: 100%;
   }
   .portfolio-grid {
     grid-template-columns: repeat(4, 1fr);
