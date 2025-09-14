@@ -1,6 +1,6 @@
 import React from "react";
 import ContactUs from "./Components/ContactUs";
-import Footer from "./Components/footer";
+import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Certificate from "./Components/Certificate";
 import Projects from "./Components/Projects";
