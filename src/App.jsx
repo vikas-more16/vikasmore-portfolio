@@ -4,7 +4,7 @@ import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Certificate from "./Components/Certificate";
 import Projects from "./Components/Projects";
-import NavBar from "./Components/NavBar";
+import NavBar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Skills from "./Components/Skills";
 
