@@ -7,8 +7,36 @@ import htmlImg from "../assets/HTML.jpg";
 import acmImg from "../assets/ACM_SummerSchool.jpg";
 import eurekaImg from "../assets/Eureka.jpg";
 import innovoImg from "../assets/INNOVO_Hackathon.jpg";
+import internshipImg from "../assets/Vikas_M_Internship_Completion_Letter_page-0001.jpg";
+import copyrightImg from "../assets/Copywrite Certificate_page-0001.jpg";
+import javaImg from "../assets/Java Mastery Certificate_page-0001.jpg";
+import uiuxImg from "../assets/UI UX certificate_page-0001.jpg";
 
 const Certificates = [
+  {
+    title: "UI/UX Design Certification – Udemy",
+    description:
+      "Successfully completed a UI/UX design course focused on mobile app design using Figma. Gained hands-on experience in user-centered design, wireframing, visual hierarchy, and interactive prototyping, strengthening my ability to design intuitive and user-friendly digital experiences.",
+    image: uiuxImg,
+  },
+  {
+    title: "Java Mastery Certification – Udemy",
+    description:
+      "Successfully completed a Java Mastery course covering core Java fundamentals and object-oriented programming concepts. Gained practical experience through hands-on exercises and projects, enhancing my ability to write efficient, scalable, and maintainable Java applications.",
+    image: javaImg,
+  },
+  {
+    title: "Copyright Registration – Attendify Web Portal",
+    description:
+      "Received official copyright registration for Attendify, a QR code–based attendance management web portal. This certification recognizes originality and ownership of the project, developed to provide a time-efficient, secure, and modern attendance solution for educational institutions.",
+    image: copyrightImg,
+  },
+  {
+    title: "Industry Internship Certification – ApexaiQ Technologies",
+    description:
+      "Successfully completed a one-month industry internship at ApexaiQ Technologies. Gained exposure to real-world industry practices along with technical training, enhancing my understanding of professional workflows, problem-solving approaches, and practical software development skills.",
+    image: internshipImg,
+  },
   {
     title: "Complete Web Development Certification – Udemy",
     description:
