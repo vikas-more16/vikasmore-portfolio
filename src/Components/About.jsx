@@ -36,11 +36,12 @@ function About() {
               <p className="text-muted-custom mb-4 pt-s">
                 I have also strengthened my programming foundation through
                 hands-on experience in Java, focusing on core concepts,
-                object-oriented programming, and problem-solving. Additionally,
-                I completed a one-month industry internship at ApexaiQ
-                Technologies, where I gained real-world exposure to industry
-                workflows, technical training, and practical development
-                practices.
+                object-oriented programming, and problem-solving. In addition, I
+                completed a one-month
+                <b> industry orientation internship at ApexaiQ Technologies</b>,
+                where I gained exposure to real-world industry practices,
+                development workflows, and technical training aligned with
+                professional software environments.
               </p>
 
               <p className="text-muted-custom pt-s">

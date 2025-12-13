@@ -34,6 +34,11 @@ const Hero = ({ scrollToSection, isVisible }) => {
               Java Developer • UI/UX Designer
             </p>
 
+            <p className="fs-6 text-muted-custom mb-4">
+              Technical & Industry Exposure Intern at{" "}
+              <b>ApexaiQ Technologies</b>
+            </p>
+
             <p className="fs-6 text-muted-custom mb-5 lh-lgc">
               Enthusiastic about modern web technologies with hands-on
               experience in building scalable web applications. Skilled in Java
