@@ -22,16 +22,28 @@ const Hero = ({ scrollToSection, isVisible }) => {
               isVisible ? "opacity-100" : "opacity-0"
             } animate-slide-in-up`}
           >
-            <h1 className="font-serif font-black display-1 text-foreground  text-glow">
+            <h1 className="font-serif font-black display-1 text-foreground text-glow">
               Vikas More
             </h1>
-            <p className="display-4 text-primary-custom mb-4 font-bold">
-              Fullstack Web Developer
+
+            <p className="display-4 text-primary-custom mb-3 font-bold">
+              Full-Stack Web Developer
             </p>
+
+            <p className="fs-5 text-muted-custom mb-4">
+              Java Developer • UI/UX Designer
+            </p>
+
+            <p className="fs-6 text-muted-custom mb-4">
+              Technical & Industry Exposure Intern at{" "}
+              <b>ApexaiQ Technologies</b>
+            </p>
+
             <p className="fs-6 text-muted-custom mb-5 lh-lgc">
-              Enthusiastic about modern web technologies and eager to gain
-              hands-on experience in building scalable applications. Committed
-              to learning, problem-solving, and delivering effective solutions.
+              Enthusiastic about modern web technologies with hands-on
+              experience in building scalable web applications. Skilled in Java
+              development and UI/UX design, with a strong focus on usability,
+              performance, and clean architecture.
             </p>
 
             <div className="d-flex flex-wrap gap-3">
@@ -42,6 +54,7 @@ const Hero = ({ scrollToSection, isVisible }) => {
                 <Mail className="me-2 mb-1" />
                 Hire Me
               </button>
+
               <button
                 className="btn btn-outline-primary btn-lg px-4 py-3"
                 onClick={() => scrollToSection("contact")}

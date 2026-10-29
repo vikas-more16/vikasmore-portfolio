@@ -1,10 +1,18 @@
-import { Code, Server, Terminal, Database, Smartphone } from "lucide-react";
+import {
+  Code,
+  Server,
+  Terminal,
+  Database,
+  Smartphone,
+  Palette,
+} from "lucide-react";
 
 const skills = [
   { name: "HTML", icon: "Code", category: "Frontend" },
   { name: "CSS", icon: "Code", category: "Frontend" },
   { name: "JavaScript", icon: "Code", category: "Frontend" },
   { name: "React", icon: "Code", category: "Frontend" },
+  { name: "UI / UX Design", icon: "Palette", category: "Design" },
   { name: "React Native", icon: "Smartphone", category: "Mobile" },
   { name: "Node.js", icon: "Server", category: "Backend" },
   { name: "MongoDB", icon: "Database", category: "Database" },
@@ -20,6 +28,7 @@ const iconMap = {
   Server: Server,
   Terminal: Terminal,
   Database: Database,
+  Palette: Palette,
 };
 
 const Skills = () => {
